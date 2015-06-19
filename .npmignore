@@ -9,5 +9,6 @@ node_modules
 
 # source/config
 src
+test
 *.yml
 .gitignore
