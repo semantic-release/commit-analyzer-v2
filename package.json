@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/semantic-release/commit-analyzer#readme",
   "keywords": [
+    "semantic-release",
     "author",
     "automation",
     "changelog",
