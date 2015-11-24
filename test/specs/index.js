@@ -71,5 +71,19 @@ test('derive version number from commits', (t) => {
     })
   })
 
+  t.test('scope with / (#7)', (tt) => {
+    tt.plan(2)
+
+    analyzer({}, {
+      commits: [{
+        hash: '1234',
+        message: 'feat(foo/bar): baz'
+      }]
+    }, (err, type) => {
+      tt.error(err)
+      tt.is(type, 'minor')
+    })
+  })
+
   t.end()
 })
